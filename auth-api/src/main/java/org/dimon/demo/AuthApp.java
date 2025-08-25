@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
-@PropertySource("classpath:auth-application.properties")
+@PropertySource("classpath:application.properties")
 public class AuthApp {
     public static void main(String[] args) {
         SpringApplication.run(AuthApp.class, args);

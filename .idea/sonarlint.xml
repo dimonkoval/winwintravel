@@ -3,8 +3,8 @@
   <component name="SonarLintProjectSettings">
     <option name="moduleMapping">
       <map>
-        <entry key="auth" value="auth-api" />
-        <entry key="data" value="data-api" />
+        <entry key="auth-api" value="auth-api" />
+        <entry key="data-api" value="data-api" />
       </map>
     </option>
   </component>
