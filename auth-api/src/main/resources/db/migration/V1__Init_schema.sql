@@ -1,4 +1,8 @@
+--src/main/resources/db/migration/V1__Init_schema.sql
+
 CREATE SCHEMA IF NOT EXISTS winwin;
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+
 
 CREATE TABLE winwin.users (
                               id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -6,7 +10,6 @@ CREATE TABLE winwin.users (
                               password VARCHAR(255) NOT NULL
 );
 
--- Змініть processing_log на processing_logs
 CREATE TABLE winwin.processing_logs (
                                         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
                                         user_id UUID NOT NULL REFERENCES winwin.users(id) ON DELETE CASCADE,
